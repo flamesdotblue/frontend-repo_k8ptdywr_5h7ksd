@@ -3,32 +3,7 @@
 > vite
 
 
-  VITE v5.4.20  ready in 248 ms
+  VITE v5.4.20  ready in 299 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.15.223:3000/
-12:36:13 PM [vite] Pre-transform error: Transform failed with 1 error:
-/home/workspace/src/components/Contact.jsx:22:45: ERROR: Expected ";" but found "as"
-12:36:16 PM [vite] Internal server error: Transform failed with 1 error:
-/home/workspace/src/components/Contact.jsx:22:45: ERROR: Expected ";" but found "as"
-  Plugin: vite:esbuild
-  File: /home/workspace/src/components/Contact.jsx:22:45
-  
-  Expected ";" but found "as"
-  20 |                onSubmit={(e) => {
-  21 |                  e.preventDefault();
-  22 |                  const form = e.currentTarget as HTMLFormElement;
-     |                                               ^
-  23 |                  const data = new FormData(form);
-  24 |                  const subject = encodeURIComponent(String(data.get('name') || 'Hello'));
-  
-      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
-      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
-      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
-      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
-      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
-      at Socket.emit (node:events:508:28)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
-      at Readable.push (node:internal/streams/readable:390:5)
-      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)

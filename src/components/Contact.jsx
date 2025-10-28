@@ -19,7 +19,7 @@ const Contact = () => {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                const form = e.currentTarget as HTMLFormElement;
+                const form = e.currentTarget; // HTMLFormElement in JS runtime
                 const data = new FormData(form);
                 const subject = encodeURIComponent(String(data.get('name') || 'Hello'));
                 const body = encodeURIComponent(`Hi, my name is ${data.get('name') || ''}.%0A%0A${data.get('message') || ''}`);
